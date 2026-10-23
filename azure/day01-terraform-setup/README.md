@@ -2,9 +2,9 @@
 
 ## Overview
 
-Day 1 focuses on setting up the Terraform development environment on Windows, authenticating with Microsoft Azure, configuring the AzureRM provider, and verifying that Terraform is ready for infrastructure-as-code development.
+Day 1 focused on setting up the Terraform development environment on Windows, authenticating with Microsoft Azure, configuring the AzureRM provider, and verifying that Terraform was ready for Infrastructure as Code (IaC) development.
 
-This is the foundation for the upcoming Azure cloud infrastructure and security projects.
+This setup established the foundation for the Azure infrastructure, identity and access management, networking, and cloud security projects in this 23-day learning journey.
 
 ## Objectives
 
@@ -13,7 +13,7 @@ This is the foundation for the upcoming Azure cloud infrastructure and security 
 - Verify the active Azure subscription.
 - Create the Terraform project directory.
 - Configure the AzureRM provider.
-- Initialize the Terraform working directory.
+- Initialise the Terraform working directory.
 - Validate the Terraform configuration.
 - Verify the generated Terraform files.
 
@@ -22,40 +22,42 @@ This is the foundation for the upcoming Azure cloud infrastructure and security 
 | Technology | Version / Details |
 |---|---|
 | Terraform | v1.6.2 |
-| AzureRM Provider | v4.81.0 |
+| AzureRM Provider | v4.81.0, if confirmed by the installed provider |
 | Cloud Platform | Microsoft Azure |
 | CLI | Azure CLI |
 | Operating System | Windows |
-| Scripting / IaC | HashiCorp Configuration Language (HCL) |
+| IaC Language | HashiCorp Configuration Language (HCL) |
 
 ## Project Structure
 
-After completing the setup, the project directory contains:
+The initial Terraform working directory contains the following files and directories:
 
-```
+```text
 terraform-azure-cloud-security/
 ├── providers.tf
 ├── .terraform.lock.hcl
-└── .terraform/
+├── .terraform/
+└── .gitignore
 ```
 
-**File and directory purposes:**
+### File and Directory Purposes
 
-- `providers.tf` — Defines the Terraform version requirement, AzureRM provider requirement, and provider configuration.
-- `.terraform.lock.hcl` — Records the selected provider version and its checksums.
-- `.terraform/` — Contains Terraform's local working data, including installed provider components.
+- **` providers.tf`** — Defines the Terraform version requirement, AzureRM provider requirement, and Azure provider configuration.
+- **`.terraform.lock.hcl`** — Records the selected provider version and package checksums to support consistent provider installation.
+- **`.terraform/`** — Contains local Terraform working data and downloaded provider components. This directory should not normally be committed to Git.
+- **`.gitignore`** — Specifies files and directories that Git should exclude from version control.
 
-The `.terraform` directory is generated automatically and should generally not be committed to Git.
+The exact files present may vary depending on the setup and commands executed.
 
 ## Step 1: Verify Terraform Installation
 
-Open PowerShell and execute:
+Open PowerShell and run:
 
 ```
 terraform version
 ```
 
-Expected output includes:
+Expected output includes the installed Terraform version, for example:
 
 ```
 Terraform v1.6.2
@@ -66,19 +68,19 @@ This confirms that Terraform is installed and accessible from the command line.
 
 ## Step 2: Authenticate to Azure
 
-Sign in to Azure using the Azure CLI:
+Sign in using Azure CLI:
 
 ```
 az login
 ```
 
-If the browser-based authentication flow completes successfully, verify the active account and subscription:
+After successful authentication, check the active account and subscription:
 
 ```
 az account show
 ```
 
-This command displays information about the authenticated Azure account and the active subscription.
+This displays information about the signed-in Azure account and the currently selected subscription.
 
 **Security note:** Never commit access tokens, passwords, client secrets, or other authentication credentials to a public repository.
 
@@ -96,15 +98,17 @@ Navigate into the directory:
 cd "$HOME\terraform-azure-cloud-security"
 ```
 
-Confirm the current working directory:
+Verify the current working directory:
 
 ```
-pwd
+Get-Location
 ```
 
-## Step 4: Create the Provider Configuration
+If the directory already exists, navigate into it instead of creating it again.
 
-Create the Terraform configuration file:
+## Step 4: Configure the AzureRM Provider
+
+Create the provider configuration file:
 
 ```
 notepad providers.tf
@@ -112,7 +116,7 @@ notepad providers.tf
 
 Add the following configuration and save the file:
 
-```
+```hcl
 terraform {
   required_version = ">= 1.6.0"
 
@@ -131,14 +135,16 @@ provider "azurerm" {
 
 ### Configuration Explanation
 
-- `required_version` specifies the minimum Terraform version required.
-- `required_providers` declares the AzureRM provider dependency.
-- `source` identifies the official HashiCorp AzureRM provider.
-- `version` constrains the provider to the compatible 4.x release series.
-- `provider "azurerm"` configures the Azure provider.
-- `features {}` supplies the required AzureRM provider features configuration.
+- **`required_version`** — Specifies the minimum Terraform version required.
+- **`required_providers`** — Declares the provider dependency required by the configuration.
+- **`source`** — Identifies the HashiCorp AzureRM provider.
+- **`version`** — Restricts provider selection to compatible versions in the AzureRM 4.x series.
+- **`provider "azurerm"`** — Configures Terraform to use the Azure provider.
+- **` features {}`** — Provides the required features configuration for the AzureRM provider.
 
-## Step 5: Initialize Terraform
+The version constraint `~> 4.0` does not pin the provider to exactly v4.81.0. The selected version is recorded in `.terraform.lock.hcl`.
+
+## Step 5: Initialise Terraform
 
 Run:
 
@@ -146,15 +152,15 @@ Run:
 terraform init
 ```
 
-Terraform downloads the required provider and initializes the working directory.
+Terraform initialises the working directory and installs the required provider dependencies.
 
-A successful initialization displays a message similar to:
+A successful initialisation displays a message similar to:
 
 ```
-Terraform has been successfully initialized!
+Terraform has been successfully initialised!
 ```
 
-During the initial setup, Terraform reported a missing required provider because the provider configuration was not yet available. After creating and saving `providers.tf`, initialization completed successfully.
+During the initial setup, Terraform reported a missing required provider because the provider configuration was not yet available. After creating and saving `providers.tf`, initialisation completed successfully.
 
 ## Step 6: Validate the Configuration
 
@@ -170,53 +176,52 @@ Expected result:
 Success! The configuration is valid.
 ```
 
-Validation checks the Terraform configuration for syntax errors and configuration issues. It does not prove that Azure resources can be deployed successfully.
+Validation checks the configuration for syntax and structural errors. It does not deploy resources or guarantee that Azure will accept a future deployment.
 
 ## Step 7: Verify the Project Files
 
-List the files and directories:
+List the files and directories, including hidden items:
 
 ```
 Get-ChildItem -Force
 ```
 
-Confirm that the directory contains `providers.tf`, `.terraform.lock.hcl`, and `.terraform`.
+Check for the expected files, including `providers.tf`, `.terraform.lock.hcl`, and the `.terraform` directory.
 
-Check the installed Terraform version again if necessary:
-
-```
-terraform version
-```
+The exact contents depend on which commands have been executed successfully.
 
 ## Day 1 Results
 
 - [x] Terraform installation verified.
-- [x] Azure CLI authentication completed.
-- [x] Active Azure subscription checked.
-- [x] Project directory created.
-- [x] `providers.tf` configured.
-- [x] Terraform initialized successfully.
+- [x] Azure CLI authentication and subscription checked, as supported by the recorded evidence.
+- [x] Project directory prepared.
+- [x] AzureRM provider configuration created.
+- [x] Terraform initialised successfully.
 - [x] Configuration validation passed.
-- [x] Generated Terraform working files verified.
+- [x] Generated Terraform working files inspected.
 
 ## Key Learnings
 
-1. Terraform uses declarative configuration files to define infrastructure.
+1. Terraform uses declarative configuration files to describe infrastructure.
 2. Providers allow Terraform to interact with cloud platforms such as Azure.
-3. Azure CLI authentication provides an identity that Terraform can use when configured to do so.
+3. Terraform can use Azure CLI authentication in a compatible local authentication setup.
 4. `terraform init` prepares the working directory and installs provider dependencies.
-5. `terraform validate` checks the configuration without deploying infrastructure.
-6. The dependency lock file helps maintain consistent provider selections across runs.
+5. `terraform validate` checks configuration structure without deploying infrastructure.
+6. The dependency lock file records the selected provider version and checksums.
 
-## Important Notes
+## Security Notes
 
-- No Azure infrastructure resources were created as part of the documented Day 1 setup.
-- Authentication does not automatically grant permission to create every Azure resource; the identity must have appropriate access.
-- Keep local Terraform working data out of version control.
-- Do not commit Terraform state files, secrets, or sensitive configuration values.
+- No Azure infrastructure resources were created as part of this Day 1 setup.
+- Authentication does not automatically grant permission to create every Azure resource. The identity must have the appropriate permissions.
+- Do not commit the `.terraform/` directory or Terraform state files.
+- Keep credentials and sensitive configuration values out of the repository.
+- Commit `.terraform.lock.hcl` so the selected provider version can be reproduced consistently.
 
----
+## Screenshot Evidence
 
-**Challenge:** 23-Day Terraform Learning Journey  
+Store the original Day 1 screenshots in a `screenshots/` subdirectory. Use the original filenames and include evidence of the Terraform version, Azure authentication, provider configuration, initialisation, and validation where available.
+
+## Challenge: 23-Day Terraform Learning Journey
+
 **Day:** 1 of 23  
 **Status:** Completed
