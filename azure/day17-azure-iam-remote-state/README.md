@@ -4,7 +4,7 @@
 
 Day 17 focuses on Azure identity and access management concepts, Terraform remote state configuration, and state locking.
 
-The project uses Terraform with Microsoft Azure and the AzureRM provider. It demonstrates configuring an Azure Storage Account backend to store Terraform state remotely and observing Terraform's state-locking behavior.
+The project uses Terraform with Microsoft Azure and the AzureRM provider. It demonstrates configuring an Azure Storage Account backend to store Terraform state remotely and observing Terraform's state-locking behaviour.
 
 During the project, I also encountered an Azure identity permission error while attempting an identity-related operation. This demonstrated that successful authentication does not necessarily provide permission to perform every Azure directory operation.
 
@@ -174,9 +174,9 @@ The Day 17 evidence ZIP contains the following screenshots:
 - Assign only the permissions needed for the intended Azure operation.
 - Record permission errors accurately and investigate them before making access changes.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 17 of 23
+**Day:** 17 of 22
 
 **Project:** Azure IAM, Remote State, and State Locking
 
