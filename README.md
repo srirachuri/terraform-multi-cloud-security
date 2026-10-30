@@ -33,9 +33,9 @@ terraform-multi-cloud-security/
 │   ├── ...
 │   └── day19-azure-vnet-routing/
 ├── aws/
-│   ├── day20-aws-security-capstone-foundation/
-│   ├── day21-aws-security-capstone-iam-ec2-s3/
-│   └── day22-aws-security-capstone-checkov-hardening/
+    ├── day20-aws-security-capstone-foundation/
+    ├── day21-aws-security-capstone-iam-ec2-s3/
+    └── day22-aws-security-capstone-checkov-hardening/
 
 ```
 
