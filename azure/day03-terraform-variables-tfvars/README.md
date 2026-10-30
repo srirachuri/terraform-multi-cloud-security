@@ -212,7 +212,7 @@ The following screenshots document the Day 3 workflow:
 7. `Screenshot Terraform-Day3-07-Terraform-Output.png`
 8. `Screenshot Terraform-Day3-08-Azure-Verification.png`
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
 **Day:** 3 of 22  
 **Status:** Completed
