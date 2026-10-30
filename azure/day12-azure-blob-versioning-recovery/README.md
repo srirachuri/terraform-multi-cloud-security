@@ -4,7 +4,7 @@
 
 Day 12 focused on protecting Azure Blob Storage data against accidental changes and deletions using Terraform and Azure Storage data protection features.
 
-I configured an Azure Storage Account with Blob versioning enabled and a seven-day deletion-retention policy. I then uploaded and modified a test blob to generate multiple versions and practiced recovering an earlier version of its content.
+I configured an Azure Storage Account with Blob versioning enabled and a seven-day deletion-retention policy. I then uploaded and modified a test blob to generate multiple versions and practised recovering an earlier version of its content.
 
 This exercise demonstrates how blob versioning and retention settings can support data recovery and help reduce the impact of accidental changes.
 
@@ -214,7 +214,7 @@ This confirmed that the original test content could be retrieved from a previous
 8. `Screenshot Terraform-Day12-08-Terraform-Apply.png` — Successful deployment.
 9. `Screenshot Terraform-Day12-09-Azure-Versioning-Verification.png` — Azure CLI verification.
 10. `Screenshot Terraform-Day12-10-Azure-Portal-Data-Protection.png` — Storage data protection settings.
-11. `Screenshot Terraform-Day12-11-Recovery-Test-Container.png` — Recovery-test container.
+11. `Screenshot Terraform-Day12-11-Recovery-Test-Container.png` — Recovery test container.
 12. `Screenshot Terraform-Day12-12-Version-1-Blob.png` — Original blob version.
 13. `Screenshot Terraform-Day12-13-Version-2-Blob.png` — Second blob version.
 14. `Screenshot Terraform-Day12-14-Version-3-Blob.png` — Third blob version.
@@ -241,7 +241,7 @@ This confirmed that the original test content could be retrieved from a previous
 - Protect Terraform state and never commit credentials or secrets to GitHub.
 - Periodically test recovery procedures.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 12 of 23  
+**Day:** 12 of 22  
 **Status:** Completed
