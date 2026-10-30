@@ -2,7 +2,7 @@
 
 ## Overview
 
-Day 3 focused on making Terraform configurations more flexible by separating input values from resource definitions. I practiced declaring variables, assigning values through a `terraform.tfvars` file, and using Terraform outputs to verify an Azure Resource Group deployment.
+Day 3 focused on making Terraform configurations more flexible by separating input values from resource definitions. I practised declaring variables, assigning values through a `terraform.tfvars` file, and using Terraform outputs to verify an Azure Resource Group deployment.
 
 This exercise builds on the previous days by introducing a cleaner way to manage configuration values.
 
@@ -214,5 +214,5 @@ The following screenshots document the Day 3 workflow:
 
 ## Challenge: 23-Day Terraform Learning Journey
 
-**Day:** 3 of 23  
+**Day:** 3 of 22  
 **Status:** Completed
