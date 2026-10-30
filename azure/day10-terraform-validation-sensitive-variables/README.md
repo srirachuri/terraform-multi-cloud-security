@@ -4,7 +4,7 @@
 
 Day 10 focused on improving Terraform configuration quality and learning how to handle sensitive values.
 
-I used `terraform fmt` to format the configuration, `terraform validate` to check its validity, and `terraform plan` to review the proposed changes without deploying infrastructure. I also practiced using a `.tfvars` file and marking a variable and output as sensitive.
+I used `terraform fmt` to format the configuration, `terraform validate` to check its validity, and `terraform plan` to review the proposed changes without deploying infrastructure. I also practised using a `.tfvars` file and marking a variable and output as sensitive.
 
 This exercise reinforced the importance of configuration validation, clear variable definitions, and careful handling of sensitive information in infrastructure-as-code projects.
 
@@ -204,7 +204,7 @@ Removing the variable does not erase copies that may already exist in terminal h
 - Review Terraform warnings and plans before making infrastructure changes.
 - Remove temporary credentials and environment variables after testing.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 10 of 23  
+**Day:** 10 of 22  
 **Status:** Completed
