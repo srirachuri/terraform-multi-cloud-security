@@ -4,7 +4,7 @@
 
 Day 6 focused on understanding the `terraform init` command and how Terraform prepares a working directory for infrastructure management.
 
-I initialised the existing Azure Terraform project, verified the AzureRM provider installation, inspected the dependency lock file, repeated initialization, and validated the configuration. Finally, I ran `terraform plan` to confirm that the existing Azure infrastructure matched the Terraform configuration.
+I initialised the existing Azure Terraform project, verified the AzureRM provider installation, inspected the dependency lock file, repeated initialisation, and validated the configuration. Finally, I ran `terraform plan` to confirm that the existing Azure infrastructure matched the Terraform configuration.
 
 ## Objectives
 
@@ -219,7 +219,7 @@ The following screenshots document the Day 6 workflow:
 6. `Screenshot Terraform-Day6-06-Init-Validate.png`
 7. `Screenshot Terraform-Day6-07-Plan-No-Infrastructure-Changes.png`
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 6 of 23  
+**Day:** 6 of 22  
 **Status:** Completed
