@@ -197,7 +197,7 @@ The following screenshots document the Day 4 workflow:
 7. `Screenshot Terraform-Day4-07-Individual-Outputs.png`
 8. `Screenshot Terraform-Day4-08-Azure-Verification.png`
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 4 of 23  
+**Day:** 4 of 22  
 **Status:** Completed
