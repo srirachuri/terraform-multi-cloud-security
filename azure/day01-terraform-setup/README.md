@@ -32,7 +32,7 @@ This setup established the foundation for the Azure infrastructure, identity and
 
 The initial Terraform working directory contains the following files and directories:
 
-```text
+```
 terraform-azure-cloud-security/
 ├── providers.tf
 ├── .terraform.lock.hcl
@@ -116,7 +116,7 @@ notepad providers.tf
 
 Add the following configuration and save the file:
 
-```hcl
+```
 terraform {
   required_version = ">= 1.6.0"
 
@@ -146,7 +146,6 @@ The version constraint `~> 4.0` does not pin the provider to exactly v4.81.0. Th
 
 ## Step 5: Initialise Terraform
 
-Run:
 
 ```
 terraform init
@@ -164,7 +163,6 @@ During the initial setup, Terraform reported a missing required provider because
 
 ## Step 6: Validate the Configuration
 
-Run:
 
 ```
 terraform validate
@@ -188,7 +186,7 @@ Get-ChildItem -Force
 
 Check for the expected files, including `providers.tf`, `.terraform.lock.hcl`, and the `.terraform` directory.
 
-The exact contents depend on which commands have been executed successfully.
+The exact contents depend on which commands ran successfully.
 
 ## Day 1 Results
 
@@ -221,7 +219,7 @@ The exact contents depend on which commands have been executed successfully.
 
 Store the original Day 1 screenshots in a `screenshots/` subdirectory. Use the original filenames and include evidence of the Terraform version, Azure authentication, provider configuration, initialisation, and validation where available.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
 **Day:** 1 of 22  
 **Status:** Completed
