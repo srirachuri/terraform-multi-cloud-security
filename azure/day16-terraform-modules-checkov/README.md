@@ -193,8 +193,8 @@ The following files were included in the Day 16 evidence ZIP:
 - Never commit credentials, secrets, or sensitive Terraform state to a public repository.
 - Keep the screenshots and scan reports as evidence of the work performed.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 16 of 23  
+**Day:** 16 of 22  
 **Project:** Terraform Modules and Checkov Security Scanning  
 **Status:** Completed
