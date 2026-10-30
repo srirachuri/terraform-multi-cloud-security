@@ -159,7 +159,7 @@ The Azure CLI verification independently confirmed that the Resource Group exist
 1. `Screenshot Terraform-Day8-01-Terraform-Apply.png` — Shows the successful apply operation, no-change result, and Terraform outputs.
 2. `Screenshot Terraform-Day8-02-Azure-Verification.png` — Shows the Azure CLI Resource Group details and successful provisioning state.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 8 of 23  
+**Day:** 8 of 22  
 **Status:** Completed
