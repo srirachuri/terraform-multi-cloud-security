@@ -196,7 +196,7 @@ This provided additional visual evidence that the Storage Account was configured
 2. `Screenshot Terraform-Day13-02-main.tf.png` — Terraform Storage Account configuration.
 3. `Screenshot Terraform-Day13-03-Storage-Account-Name-Check.png` — Storage Account name check.
 4. `Screenshot Terraform-Day13-04-Terraform-Fmt.png` — Terraform formatting.
-5. `Screenshot Terraform-Day13-05-Terraform-Init.png` — Successful Terraform initialization.
+5. `Screenshot Terraform-Day13-05-Terraform-Init.png` — Successful Terraform initialisation.
 6. `Screenshot Terraform-Day13-06-Terraform-Validate.png` — Terraform validation.
 7. `Screenshot Terraform-Day13-07-Terraform-Plan.png` — Planned infrastructure changes.
 8. `Screenshot Terraform-Day13-08-Terraform-Apply.png` — Successful deployment.
@@ -222,7 +222,7 @@ This provided additional visual evidence that the Storage Account was configured
 - Protect Terraform state and never commit credentials or sensitive values to GitHub.
 - Verify deployed settings rather than relying only on Terraform configuration.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 13 of 23  
+**Day:** 13 of 22  
 **Status:** Completed
