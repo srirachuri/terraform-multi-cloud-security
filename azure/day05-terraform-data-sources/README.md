@@ -210,7 +210,7 @@ The following screenshots document the Day 5 workflow:
 7. `Screenshot Terraform-Day5-08-Individual-Data-Outputs.png`
 8. `Screenshot Terraform-Day5-09-Azure-Verification.png`
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 5 of 23  
+**Day:** 5 of 22  
 **Status:** Completed
