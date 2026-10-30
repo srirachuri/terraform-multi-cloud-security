@@ -223,5 +223,5 @@ Store the original Day 1 screenshots in a `screenshots/` subdirectory. Use the o
 
 ## Challenge: 23-Day Terraform Learning Journey
 
-**Day:** 1 of 23  
+**Day:** 1 of 22  
 **Status:** Completed
