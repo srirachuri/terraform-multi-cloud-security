@@ -248,7 +248,7 @@ The plan was reviewed before proceeding. No infrastructure deployment was perfor
 - Review outbound rules and reduce broad egress access where appropriate.
 - Keep the private subnet separate from the public route table.
 - Never commit AWS credentials, Terraform state files, or sensitive variable files to GitHub.
-- Use a sanitized `terraform.tfvars.example` for public documentation.
+- Use a sanitised `terraform.tfvars.example` for public documentation.
 - Review the Terraform plan before applying infrastructure changes.
 
 ## Challenge: 23-Day Terraform Learning Journey
