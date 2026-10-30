@@ -68,7 +68,7 @@ The NSG is associated with the relevant Azure subnet so that its security rules 
 
 I initialised the Terraform working directory to download the required provider and prepare the project.
 
-```powershell
+```
 terraform init
 ```
 
@@ -83,7 +83,7 @@ terraform fmt
 terraform validate
 ```
 
-Formatting improves consistency, while validation checks the configuration structure. Neither command independently confirms that Azure will authorize every operation.
+Formatting improves consistency, while validation checks the configuration structure. Neither command independently confirms that Azure will authorise every operation.
 
 ## Step 4: Review the Terraform Plan
 
@@ -146,9 +146,9 @@ The Day 18 evidence ZIP contains:
 5. Reviewing the execution plan helps prevent unintended changes.
 6. Network security requires limiting access to only what the workload needs.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 18 of 23
+**Day:** 18 of 22
 
 **Project:** Project 3 — Azure Network Security Group
 
