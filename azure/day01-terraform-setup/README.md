@@ -51,7 +51,7 @@ The exact files present may vary depending on the setup and commands executed.
 
 ## Step 1: Verify Terraform Installation
 
-Open PowerShell and run:
+I opened PowerShell and ran:
 
 ```
 terraform version
@@ -68,13 +68,13 @@ This confirms that Terraform is installed and accessible from the command line.
 
 ## Step 2: Authenticate to Azure
 
-Sign in using Azure CLI:
+I sign in using Azure CLI:
 
 ```
 az login
 ```
 
-After successful authentication, check the active account and subscription:
+After successful authentication, I checked the active account and subscription:
 
 ```
 az account show
@@ -86,19 +86,19 @@ This displays information about the signed-in Azure account and the currently se
 
 ## Step 3: Create the Project Directory
 
-Create a dedicated directory for the Azure Terraform project:
+I created a dedicated directory for the Azure Terraform project:
 
 ```
 mkdir "$HOME\terraform-azure-cloud-security"
 ```
 
-Navigate into the directory:
+Navigated into the directory:
 
 ```
 cd "$HOME\terraform-azure-cloud-security"
 ```
 
-Verify the current working directory:
+I verify the current working directory:
 
 ```
 Get-Location
@@ -108,13 +108,13 @@ If the directory already exists, navigate into it instead of creating it again.
 
 ## Step 4: Configure the AzureRM Provider
 
-Create the provider configuration file:
+I created the provider configuration file:
 
 ```
 notepad providers.tf
 ```
 
-Add the following configuration and save the file:
+Added the following configuration and save the file:
 
 ```
 terraform {
