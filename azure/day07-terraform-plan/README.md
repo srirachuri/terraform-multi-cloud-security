@@ -134,7 +134,7 @@ The plan step allows you to inspect intended changes before applying them.
 
 The screenshot shows the `terraform plan` command, the Azure data source read, the Resource Group refresh, and the successful no-change result.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 7 of 23  
+**Day:** 7 of 22  
 **Status:** Completed
