@@ -71,7 +71,7 @@ I defined two subnets inside the VNet:
 - **Web subnet:** Intended for web-facing resources.
 - **Application subnet:** Intended for application resources.
 
-Subnet segmentation makes network architecture easier to organize and provides separate scopes for future security rules and routing configurations.
+Subnet segmentation makes network architecture easier to organise and provides separate scopes for future security rules and routing configurations.
 
 Creating separate subnets does not, by itself, guarantee isolation. Appropriate NSG rules and routing controls must also be configured.
 
@@ -161,9 +161,9 @@ The Day 19 evidence ZIP contains:
 6. Validation and planning should be completed before applying changes.
 7. Azure and AWS have different networking resources and routing behaviour.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 19 of 23
+**Day:** 19 of 22
 
 **Project:** Project 4 — Azure Virtual Network and Routing
 
