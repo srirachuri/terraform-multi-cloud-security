@@ -231,7 +231,7 @@ The Azure Portal screenshot provides visual evidence of the Storage Account encr
 - Never commit credentials, Terraform state files, or sensitive values to a public repository.
 - Review Terraform plans before deploying changes.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 11 of 23  
+**Day:** 11 of 22  
 **Status:** Completed
