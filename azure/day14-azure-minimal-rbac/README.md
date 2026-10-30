@@ -68,7 +68,7 @@ The project used the built-in **Storage Blob Data Reader** role to grant read ac
 
 An Azure role assignment can be defined in Terraform as follows:
 
-```hcl
+```
 resource "azurerm_role_assignment" "blob_reader" {
   scope                = azurerm_storage_account.secure.id
   role_definition_name = "Storage Blob Data Reader"
@@ -214,7 +214,7 @@ The screenshot showed the assigned role and principal information, providing add
 - Protect credentials, Terraform state, and sensitive configuration values.
 - Remove access when it is no longer required.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 14 of 23  
+**Day:** 14 of 22  
 **Status:** Completed
