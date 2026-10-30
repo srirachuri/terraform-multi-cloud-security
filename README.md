@@ -36,9 +36,7 @@ terraform-multi-cloud-security/
 │   ├── day20-aws-security-capstone-foundation/
 │   ├── day21-aws-security-capstone-iam-ec2-s3/
 │   └── day22-aws-security-capstone-checkov-hardening/
-└── docs/
-    ├── architecture/
-    └── security-findings/
+
 ```
 
 *The tree above is the intended organisation. Replace the illustrative `...` with your actual folders and include `docs/` only if you create it.*
