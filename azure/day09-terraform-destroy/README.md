@@ -149,7 +149,7 @@ The second screenshot is evidence of the Resource Group's pre-destruction state;
 - Retain appropriate backups and recovery plans for important infrastructure.
 - Use separate environments for practice and production workloads.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 9 of 23  
+**Day:** 9 of 22  
 **Status:** Completed
