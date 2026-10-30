@@ -71,7 +71,7 @@ For this exercise, the resource group name and location were supplied through va
 
 I configured an Azure Resource Group using the AzureRM provider.
 
-```hcl
+```
 resource "azurerm_resource_group" "demo" {
   name     = var.resource_group_name
   location = var.location
@@ -214,5 +214,5 @@ The following screenshots document the Day 2 workflow:
 
 ## Challenge: 23-Day Terraform Learning Journey
 
-**Day:** 2 of 23  
+**Day:** 2 of 22  
 **Status:** Completed
