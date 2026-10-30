@@ -4,7 +4,7 @@
 
 Day 15 is the first Terraform security project in this learning journey. The goal was to apply earlier Terraform concepts to build and manage Azure Storage Accounts with security-focused configuration.
 
-I used variables to control configuration options and `for_each` to manage multiple Storage Account resources. I then formatted, initialized, validated, planned, and applied the Terraform configuration. After deployment, I verified the Storage Account configuration and encryption settings, inspected Terraform outputs, and cleaned up the resources.
+I used variables to control configuration options and `for_each` to manage multiple Storage Account resources. I then formatted, initialised, validated, planned, and applied the Terraform configuration. After deployment, I verified the Storage Account configuration and encryption settings, inspected Terraform outputs, and cleaned up the resources.
 
 This project demonstrates how Terraform can make cloud security configurations reusable, consistent, and easier to maintain.
 
@@ -260,8 +260,8 @@ Destroying test resources helps prevent unnecessary cloud costs.
 - Protect Terraform state and avoid committing credentials or sensitive values.
 - Clean up temporary infrastructure after testing.
 
-## Challenge: 23-Day Terraform Learning Journey
+## Challenge: 22-Day Terraform Learning Journey
 
-**Day:** 15 of 23  
+**Day:** 15 of 22  
 **Project:** Project 1 — Azure Encrypted Storage  
 **Status:** Completed
